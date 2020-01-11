@@ -47,7 +47,6 @@ export class FrequencyTabComponent implements OnInit {
   }
 
   selectTabChange($event: MatTabChangeEvent) {
-    console.log($event.tab.textLabel);
     switch ($event.tab.textLabel) {
       case 'DAILY':
         this.component = DailyComponent;

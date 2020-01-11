@@ -1,0 +1,26 @@
+<mat-tab-group (selectedTabChange)="selectTabChange($event)" [selectedIndex]="selectedIndex" sanimationDuration="200ms">
+  <mat-tab *ngFor="let i of tabItem" label="{{i.name}}">
+    <div style="margin: 2rem">
+      <ndc-dynamic [ndcDynamicComponent]="component"></ndc-dynamic>
+      <app-time-set [hidden]="!timeSetFlag"></app-time-set>
+    </div>
+    <div class="footer" *ngIf="footerFlag">
+      <div style="float: left;margin: 10px">
+        <p>You have selected a {{i.name}} frequency.</p>
+      </div>
+      <div style="float: right">
+        <button mat-flat-button style="margin: 10px" color="warn" (click)="cancel()">
+          CANCEL
+        </button>
+        <button mat-flat-button style="margin: 10px" color="accent" (click)="previousStep()">
+          <mat-icon>arrow_back_ios</mat-icon>
+          PREVIOUS
+        </button>
+        <button mat-flat-button style="margin: 10px" color="primary" (click)="nextStep()">
+          <mat-icon>arrow_forward_ios</mat-icon>
+          NEXT
+        </button>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

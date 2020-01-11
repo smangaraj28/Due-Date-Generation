@@ -1,0 +1,44 @@
+<div style="display: flex;flex-direction: row;flex-wrap: wrap;margin-top: 3rem">
+  <div style="flex-basis: 100%">
+    <p>Start Froms</p>
+    <input style="width: 90%;height: 50%" [owlDateTime]="dt2" placeholder="Date Time">
+    <span [owlDateTimeTrigger]="dt2"><mat-icon>home</mat-icon></span>
+    <owl-date-time #dt2></owl-date-time>
+  </div>
+</div>
+
+<mat-radio-group aria-label="Select an option">
+  <div style="display: flex;flex-direction: row;margin-top: 4rem">
+    <mat-radio-button value="1" style="flex-basis: 33%">
+      <div style="display: flex;flex-direction: row;">
+        <div style="flex-basis: 100%">
+          <p>End By</p>
+          <input style="width: 200%;height: 50%" [owlDateTime]="dt3" placeholder="Date Time">
+          <span [owlDateTimeTrigger]="dt3"><mat-icon>home</mat-icon></span>
+          <owl-date-time #dt3></owl-date-time>
+        </div>
+      </div>
+    </mat-radio-button>
+    <mat-radio-button value="2" style="flex-basis: 33%">
+      <div style="display: flex;flex-direction: row;">
+        <div style="flex-basis: 100%">
+          <p>Ends After</p>
+          <input style="width: 200%;height: 50%" type="number" placeholder="Occurrence">
+        </div>
+      </div>
+    </mat-radio-button>
+    <mat-radio-button value="3" style="flex-basis: 33%">
+      <div style="display: flex;flex-direction: row">
+        <div style="flex-basis: 33%;margin-top: -0.3rem">
+          <p>Ongoing</p>
+          <textarea rows="4" cols="50" name="comment" readonly="readonly">
+          {{ongoingText}}
+          </textarea>
+        </div>
+      </div>
+    </mat-radio-button>
+  </div>
+</mat-radio-group>
+
+
+

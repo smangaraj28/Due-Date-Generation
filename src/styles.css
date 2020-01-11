@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+body {
+  margin: 0;
+  height: 100%;
+}
+html {
+  height: 100%;
+}

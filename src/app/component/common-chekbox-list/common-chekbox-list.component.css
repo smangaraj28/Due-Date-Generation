@@ -1,0 +1,24 @@
+.border-style {
+  background: #27d9b4;
+  padding: 4px 10px;
+  margin: 4px 0;
+  display: inline-block;
+}
+
+.ttw_button {
+  background: #27d9b4;
+  color: red;
+  border: 10px solid white;
+  padding: 6px 52px;
+  font-weight: bold;
+  font-size: 19px;
+  display: inline-block;
+}
+
+.flex-width-16 {
+  flex-basis: 16.66%;
+}
+
+.flex-width-14 {
+  flex-basis: 14.28%;
+}

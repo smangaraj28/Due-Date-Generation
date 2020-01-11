@@ -53,6 +53,7 @@ export class OnCompletionOffComponent implements OnInit {
 
   addRowData(rowObj: AddHolidayModel) {
     const d = new Date();
+    console.log(rowObj);
     this.dataSource.push({
       id: d.getTime(),
       name: rowObj.name,

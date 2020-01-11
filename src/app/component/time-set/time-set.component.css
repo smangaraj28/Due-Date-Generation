@@ -1,3 +1,14 @@
 :host ::ng-deep .mat-radio-button > label > .mat-radio-container {
-  top: 2rem;
+  top: 1.5rem;
+}
+.example-radio-group {
+  display: flex;
+  flex-direction: row;
+  margin-left: -2rem;
+  margin-top: 2rem;
+}
+
+.example-radio-button {
+  margin: 5px;
+  flex-basis: 33%;
 }

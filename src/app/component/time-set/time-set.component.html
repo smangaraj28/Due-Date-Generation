@@ -1,17 +1,21 @@
 <div style="display: flex;flex-direction: row;flex-wrap: wrap;margin-top: 3rem">
   <div style="flex-basis: 100%">
     <p>Start Froms</p>
-    <input style="width: 90%;height: 50%" [owlDateTime]="dt2" placeholder="Date Time">
-    <span [owlDateTimeTrigger]="dt2"><mat-icon>home</mat-icon></span>
-    <owl-date-time #dt2></owl-date-time>
+    <div class="input_container">
+      <input style="width: 79rem;height: 3rem" [owlDateTime]="dt2" placeholder="Date Time">
+      <span [owlDateTimeTrigger]="dt2"><mat-icon class="icon-class_1">home</mat-icon></span>
+      <owl-date-time #dt2></owl-date-time>
+    </div>
   </div>
 </div>
 <mat-radio-group class="example-radio-group">
   <mat-radio-button class="example-radio-button" [value]="1">
     <p>End By</p>
-    <input style="width:20rem;height: 3rem" [owlDateTime]="dt3" placeholder="Date Time">
-    <span [owlDateTimeTrigger]="dt3"><mat-icon>home</mat-icon></span>
-    <owl-date-time #dt3></owl-date-time>
+    <div class="input_container">
+      <input style="width:20rem;height: 3rem" [owlDateTime]="dt3" placeholder="Date Time">
+      <span [owlDateTimeTrigger]="dt3"><mat-icon class="icon-class_2">home</mat-icon></span>
+      <owl-date-time #dt3></owl-date-time>
+    </div>
   </mat-radio-button>
   <mat-radio-button class="example-radio-button" [value]="2">
     <p>End After</p>

@@ -33,4 +33,7 @@ export class DialogBoxComponent {
     this.dialogRef.close({event: 'Cancel'});
   }
 
+  dateChange($event) {
+    this.localData.holidayDate = new Date($event);
+  }
 }

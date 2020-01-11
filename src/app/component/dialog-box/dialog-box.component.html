@@ -10,7 +10,7 @@
       <mat-form-field *ngIf="action != 'Delete'; else elseTemplate">
         <input placeholder="Choose Date" matInput type="date"
                [ngModel] ="localData.holidayDate | date:'yyyy-MM-dd'"
-               (ngModelChange)="localData.holidayDate = $event">
+               (ngModelChange)="dateChange($event)">
       </mat-form-field>
     </div>
   </div>

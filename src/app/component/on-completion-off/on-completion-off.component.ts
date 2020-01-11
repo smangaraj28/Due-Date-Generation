@@ -18,7 +18,7 @@ export class OnCompletionOffComponent implements OnInit {
   constructor(public dialog: MatDialog) {
   }
 
-  displayedColumns: string[] = ['id', 'name', 'holidayDate', 'addedOn', 'action'];
+  displayedColumns: string[] = ['name', 'holidayDate', 'addedOn', 'action'];
   dataSource = ELEMENT_DATA;
 
   @ViewChild(MatTable, {static: true}) table: MatTable<any>;
@@ -42,7 +42,6 @@ export class OnCompletionOffComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result.event === 'Add') {
-        console.log(result);
         this.addRowData(result.data);
       } else if (result.event === 'Update') {
         this.updateRowData(result.data);

@@ -1,0 +1,75 @@
+<div style="display: flex;flex-direction: row">
+  <div style="flex-basis: 50%">
+    <p>QUANT</p>
+  </div>
+  <div style="flex-basis: 50%">
+    <p>Verbal</p>
+  </div>
+</div>
+<div style="display: flex;flex-direction: row">
+  <div style="flex-basis: 25%">
+    Current <input type="number" [(ngModel)]="currentQuant"/>
+  </div>
+  <div style="flex-basis: 25%">
+    Target <input type="number" [(ngModel)]="targetQuant"/>
+  </div>
+  <div style="flex-basis: 25%">
+    Current <input type="number" [(ngModel)]="currentVerbal"/>
+  </div>
+  <div style="flex-basis: 25%">
+    Target <input type="number" [(ngModel)]="targetVerbal"/>
+  </div>
+</div>
+<div style="display: flex;align-items: center;justify-content: center;">
+  <input class="button-css" type="button" value="Submit And Refresh" (click)="submit()"/>
+</div>
+<div *ngIf="displayFlag">
+  <div class="content-container">
+    <h2>Total Score</h2>
+    <h2>{{currentScore}}</h2>
+<!--    <div style="position: fixed;padding-bottom: 0.1rem;margin-left: 10rem">-->
+<!--      34-->
+<!--    </div>-->
+    <div class="container ">
+
+      <div class="skills" [ngStyle]="{width: getTotalTargetWidth(),'background-color': '#FFFE33'}">
+        <div class="skills" [ngStyle]="{width: getTotalCurrentWidth(),'background-color': '#2196F3'}">
+          <div style="padding-top: 1rem">
+            {{currentScore }}
+          </div>
+        </div>
+        {{targetScore }}
+      </div>
+    </div>
+  </div>
+  <div style="display: flex;flex-direction: row">
+    <div style="flex-basis: 50%" class="content-container">
+      <h2>Quant Score</h2>
+      <h2>{{currentQuant}}</h2>
+      <div class="container ">
+        <div class="skills" [ngStyle]="{width: getQuantTargetWidth(),'background-color': '#FFFE33'}">
+          <div class="skills" [ngStyle]="{width: getQuantCurrentWidth(),'background-color': '#2196F3'}">
+            <div style="padding-top: 1rem">
+              {{currentQuant }}
+            </div>
+          </div>
+          {{targetQuant }}
+        </div>
+      </div>
+    </div>
+    <div style="flex-basis: 50%" class="content-container">
+      <h2>Verbal Score</h2>
+      <h2>{{currentVerbal}}</h2>
+      <div class="container ">
+        <div class="skills" [ngStyle]="{width: getVerbalTargetWidth(),'background-color': '#FFFE33'}">
+          <div class="skills" [ngStyle]="{width: getVerbalCurrentWidth(),'background-color': '#2196F3'}">
+            <div style="padding-top: 1rem">
+              {{currentVerbal }}
+            </div>
+          </div>
+          {{targetVerbal  }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

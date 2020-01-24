@@ -25,6 +25,7 @@ import {CommonChekboxListComponent} from './component/common-chekbox-list/common
 import {DynamicModule} from 'ng-dynamic-component';
 import {OnCompletionOffComponent} from './component/on-completion-off/on-completion-off.component';
 import { DialogBoxComponent } from './component/dialog-box/dialog-box.component';
+import { ScoreCardComponent } from './score-card/score-card/score-card.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { DialogBoxComponent } from './component/dialog-box/dialog-box.component'
     OneTimeComponent,
     CommonChekboxListComponent,
     OnCompletionOffComponent,
-    DialogBoxComponent
+    DialogBoxComponent,
+    ScoreCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box
+}
+
+.container {
+  width: 100%;
+  text-align: right;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.content-container {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  background-color: #E9E8E0;
+  width: 100%;
+  border: 2px solid grey;
+}
+
+.skills {
+  height: 1rem;
+  text-align: right;
+  color: black;
+  border-radius: 10px;
+}
+
+.ts {
+  width: 80%;
+  background-color: #FFFE33;
+}
+
+.qs {
+  width: 80%;
+  background-color: #FFFE33;
+}
+
+.vs {
+  width: 65%;
+  background-color: #FFFE33;
+}
+
+.total {
+  width: 50%;
+
+  background-color: #2196F3;
+}
+
+.quant {
+  width: 80%;
+  background-color: #2196F3;
+}
+
+.verbal {
+  width: 65%;
+  background-color: #2196F3;
+}
+
+.button-css {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
